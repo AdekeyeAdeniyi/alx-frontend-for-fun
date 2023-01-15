@@ -19,7 +19,7 @@ if __name__ == "__main__":
         )
         exit(1)
     if not os.path.isfile(sys.argv[1]):
-        print('Missing {}'.format(sys.argv[1]))
+        print('Missing {}'.format(sys.argv[1]), file=sys.stderr)
         exit(1)
     else:
         exit(0)
