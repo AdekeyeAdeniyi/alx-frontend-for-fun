@@ -3,7 +3,7 @@
     Scripts takes two arguments:
     - Name of markdown file
     - Output file name
-    Return
+    Return:
     - Exit with 1 if arguments < 2
     - Exit with 1 if file not found
     - Exit with 0 if success.
