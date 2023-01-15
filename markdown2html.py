@@ -5,7 +5,7 @@
     - Output file name
     Return
     - Exit with 1 if arguments < 2
-    - Exit with 1 if file not found
+    - Exit with 1 if missing file
     - Exit with 0 if success.
 """
 
@@ -23,4 +23,5 @@ if __name__ == "__main__":
         exit(1)
 
     else:
+        pass
         exit(0)
