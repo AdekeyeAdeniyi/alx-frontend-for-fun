@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
     Scripts takes two arguments:
     - Name of markdown file
