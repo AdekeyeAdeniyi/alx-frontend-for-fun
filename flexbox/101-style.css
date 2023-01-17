@@ -1,0 +1,45 @@
+/* Boxex */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    color: #ffffff;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.box1,
+.box5{
+    height: 8vh;
+}
+
+.box2,
+.box4{
+    height: 10vh;
+}
+
+.box3 {
+    height: 12vh;
+}
+
+.box1 {
+    background-color: aquamarine;
+}
+.box2 {
+    background-color: blueviolet;
+}
+.box3 {
+    background-color: burlywood;
+}
+.box4 {
+    background-color: magenta;
+}
+.box5 {
+    background-color: greenyellow;
+}
