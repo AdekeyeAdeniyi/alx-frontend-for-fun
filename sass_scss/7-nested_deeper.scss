@@ -1,0 +1,16 @@
+
+$fontSIze-default: 16px;
+$fontSIze-sm: 12px;
+$fontSIze-md: 14px;
+
+body {
+    font-size: $fontSIze-default;
+
+    & h1 {
+        font-size: $fontSIze-md;
+
+        &.smaller {
+            font-size: $fontSIze-sm;
+        }
+    }
+}
