@@ -1,0 +1,16 @@
+$fontSize-lg: 20px; 
+$fontSize-md: 14px; 
+
+@mixin query ($breakPoint){
+    @media screen and (max-width: $breakPoint) {
+        @content;
+    }
+}
+
+h1 {
+    font-size: $fontSize-lg;
+
+    @include query(320px){
+        font-size: $fontSize-md;
+    }
+}
