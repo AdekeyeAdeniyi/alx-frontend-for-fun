@@ -1,14 +1,10 @@
 
 $text-color: #3D3D3D;
 
-%text-color {
+body {
     color: $text-color;
 }
 
-body {
-    @extend %text-color;
-}
-
 p{
-    @extend %text-color;
+    color: $text-color;
 }
