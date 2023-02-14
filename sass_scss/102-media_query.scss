@@ -1,0 +1,48 @@
+$phone: 320px;
+$tablet: 640px;
+$desktop: 960px;
+
+$fontSize--sm: 14px;
+$fontSize--md: 16px;
+$fontSize--lg: 18px;
+$fontSize--xl: 20px;
+
+$text-color: #1D1D1D;
+
+@mixin Queries($breakPoint){
+    @if($breakPoint == "phone"){
+        @media screen and (max-width: $phone) {
+            @content;
+        }
+    }
+    @if($breakPoint == "tablet"){
+        @media screen and (max-width: $tablet) {
+            @content;
+        }
+    }
+    @if($breakPoint == "desktop"){
+        @media screen and (max-width: $desktop) {
+            @content;
+        }
+    }
+}
+
+h1 {
+    font-size: $fontSize--xl;
+
+    @include Queries(desktop){
+        font-size: $fontSize--lg;
+    }
+
+    @include Queries(tablet){
+        font-size: $fontSize--md;
+    }
+
+    @include Queries(phone){
+        font-size: $fontSize--sm;
+
+        &.small {
+            color: $text-color;
+        }
+    }
+}
